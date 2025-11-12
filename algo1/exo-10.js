@@ -1,0 +1,19 @@
+/*
+10.FooBar
+Affichez les nombres de 1 à 100, pour les multiples
+de 5 vous afficherez "bar", pour les multiples de 3 vous
+afficherez "foo" et pour les multiples de 3 et de 5 vous
+afficherez "foobar".
+*/
+
+for (let i = 1; i <=100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log("foobar")
+    } else if (i % 5 == 0) {
+        console.log("bar")
+    } else if (i % 3 == 0) {
+        console.log("foo")
+    } else {
+        console.log("")
+    }
+}
