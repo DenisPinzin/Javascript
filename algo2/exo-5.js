@@ -3,6 +3,19 @@
 let noir = "◼️"
 let blanc = "◻️"
 
+for (let i = 0; i < 10; i++) {
+    let ligne = "";
+    for (let j = 0; j < 10; j++) {
+        if (i === 0 || i === 10-1 || j === 0 || j === 10-1 || j === 2 && i >= 2 && i <= 7 || i === 2 && j >= 2 && j <= 7 || i >= 2 && i<= 7 && j === 7 || i === 7 && j >= 2 && j<= 7 || i === 4 && j <= 5 && j >= 4 || i === 5 && j <= 5 && j >= 4) {
+            ligne += " " + noir;
+        } else {
+            ligne += " " + blanc;
+        }
+    }
+    console.log(ligne);
+}
+
+console.log("    ")
 
 for (let i = 0; i < 10; i++) {
     let ligne = "";

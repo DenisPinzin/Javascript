@@ -25,7 +25,7 @@ console.log("          ")
 for (let i = 0; i < 10; i++) {
     let ligne = "";
     for (let j = 0; j < 10; j++) {
-        if (i === 0 || i === 10-1 || j === 0 || j === 10-1 || j === i || j === 9 - i || i === 8) {
+        if (i === 0 || i === 10-1 || j === 0 || j === 10-1 || j === i || j === 9 - i ) {
             ligne += " " + noir;
         } else {
             ligne += " " + blanc;
