@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .big-img-container {
+        height: 500px;
+        width: 600px;
+    }
+
+    .big-img-container img {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .sm-img-container {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .sm-img-container img {
+        height: 300px;
+        width: 400px;
+    }
+
+</style>
+<body>
+    
+    <div class="container">
+        <div class="big-img-container">
+            <img id="mainImage" src="/exo-3/img/lion.jpg">
+        </div>
+        <div class="sm-img-container">
+            <img class="thumbnail" src="/exo-3/img/lion.jpg" alt="">
+            <img class="thumbnail" src="/exo-3/img/zebra.jpg" alt="">
+            <img class="thumbnail" src="/exo-3/img/giraf.jpg" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
