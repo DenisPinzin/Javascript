@@ -5,10 +5,10 @@ Pour rappel le théorème de Pythagore qui permet de calculer l'hypothénuse est
 a²=b²+c²
 */
 
-function calcHypotenuse(a, b) {
+function Hypo(a, b) {
   return Math.sqrt(a * a + b * b);
 }
 
-console.log(calcHypotenuse(3, 4));
+console.log(Hypo(3, 4));
 
-console.log(calcHypotenuse(5, 12));
+console.log(Hypo(5, 12));

@@ -4,15 +4,29 @@
 l'ordre croissant.
 */
 
-const arr = [80, 9, 700, 40, 1, 5, 200];
+// const arr = [80, 9, 700, 40, 1, 5, 200];
+
+// function isSorted(arr) {
+    
+//     function compare(a, b) {
+//         return a - b;
+//     }
+
+//     return arr.sort(compare);
+// }
+
+// console.log(isSorted(arr))
+
+//VRAI SOLUTION
 
 function isSorted(arr) {
-    // Fonction de comparaison numérique
-    function compare(a, b) {
-        return a - b;
+    for (let i = 0; i < arr.length - 1; i++) {
+      if (arr[i] > arr[i + 1]) {
+        return false;
+      }
     }
+    return true;
+  }
 
-    return arr.sort(compare);
-}
-
-console.log(isSorted(arr))
+let numbers = [1, 2, 3, 4, 5];
+console.log(isSorted(numbers));

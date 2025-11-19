@@ -5,8 +5,8 @@ Assurez-vous que le reste du mot est en minuscules.
 */
 
 
-let phrase = "bonjour tout le monde";
-let newPhrase = []
+let phrase = "bonjour tOut le moNDe";
+let newPhrase = ""
 
 
 function transformeUpperCase(phrase) {
@@ -14,8 +14,9 @@ function transformeUpperCase(phrase) {
     
     for (let i of array) {
         newPhrase += i.charAt(0).toUpperCase() + i.slice(1) + " ";
-}
-return newPhrase
+    }
+
+    return newPhrase
 }
 
 

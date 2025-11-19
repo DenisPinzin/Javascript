@@ -4,16 +4,25 @@
 nombres pairs d'un tableau donné.
 */
 
-let arr = [1, 2, 3, 4, 5, 6]
+// let arr = [1, 2, 3, 4, 5, 6]
+
+// function filterEven(arr) {
+//     let secondArr = []
+//     for (let value of arr) {
+//         if (value % 2 === 0) {
+//             secondArr.push(value)
+//         }
+//     }
+//     return secondArr
+// }
+
+// console.log(filterEven(arr))
+
+//SOLUTION
 
 function filterEven(arr) {
-    let secondArr = []
-    for (let value of arr) {
-        if (value % 2 === 0) {
-            secondArr.push(value)
-        }
-    }
-    return secondArr
+    return arr.filter(item => item % 2 === 0)
 }
 
-console.log(filterEven(arr))
+let numbers = [1, 2, 3, 4, 5, 6];
+console.log(filterEven(numbers));

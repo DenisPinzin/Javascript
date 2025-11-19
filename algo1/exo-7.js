@@ -7,8 +7,6 @@ Utiliser le programme précédent pour afficher uniquement les nombres pair de 1
 
 for (let i = 0; i <= 20; i++) {
     if (i % 2 == 0) {
-    console.log(i + " c'est pair")
-} else {
-    console.log(i + " ce n'est pas pair")
-}
+    console.log(i)
+    } 
 }
