@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        align-self: center;
+    }
+
+    .defined, #error {
+        display: block;
+        color: red;
+        margin: 0;
+        display: none;
+    }
+
+    .bg-blue {
+        background-color: blue;
+    }
+
+    .bg-red {
+        background-color: red;
+    }
+
+    .bg-green {
+        background-color: green;
+    }
+
+    .btn {
+        border-radius: 6px;
+        padding: 18px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    input {
+        height: 50px;
+        width: 400px;
+        border-radius: 10px;
+        border-color: lightgray;
+    }
+</style>
+<body>
+    <h1>Liste de tâche</h1>
+    <div>
+        <div>
+            <input type="text" placeholder="Ajouter une tâche" id="input">
+            <input type="date" name="date" id="date">
+            <button class="btn bg-blue" id="addtache">Ajouter</button>
+        </div>
+        <p class="defined" id="defined">une tâche avec ce nom existe déjà.</p>
+    </div>
+
+
+    <h2>Tâches en cours</h2>
+    <p class="defined" id="error">Erreur! Une tâche avec ce nom existe déjà.</p>
+    <div id="inProgress">
+
+    </div>
+    
+
+    <h2>Tâches complété</h2>
+    <div id="finish">
+
+    </div>
+    <script src="script.js"></script>
+    <script src="save.js"></script>
+</body>
+</html>
