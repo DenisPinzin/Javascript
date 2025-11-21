@@ -9,7 +9,6 @@ doit être vert. S'il tape "Au revoir", affiche "À la prochaine !". Pour toute
 autre saisie, affiche "Je ne comprends pas" en rouge.
 */
 
-
 let p = document.getElementById('message')
 let button = document.getElementById('button')
 let input = document.getElementById('userInput')

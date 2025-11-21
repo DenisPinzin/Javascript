@@ -6,16 +6,14 @@ Exercice 4 : L'horloge en temps réel (DOM)
 */
 
 const clock = document.getElementById('clock')
-let currentDate = new Date()
-let hour = currentDate.getHours()
-let minut = currentDate.getMinutes()
-let second = currentDate.getSeconds()
-let now = (clock.textContent = hour + ":"+ minut+ ":" +second)
+
+
 
 setInterval(() => {
-    now
-}, 500);
-
-setInterval(() => {
-    now
+    let currentDate = new Date()
+    let hour = currentDate.getHours()
+    let minut = currentDate.getMinutes()
+    let second = currentDate.getSeconds()
+    clock.textContent = hour + ":"+ minut+ ":" +second
 }, 1000);
+
