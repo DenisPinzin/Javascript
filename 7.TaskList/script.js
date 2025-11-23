@@ -63,19 +63,19 @@ button.addEventListener('click', function () {
     //CREATION DES BOUTONS
     //MODIFIER
     const modifier = document.createElement('button')
-    modifier.classList.add('btn', 'bg-blue')
+    modifier.classList.add('btn', 'bg-blue', 'edit-btn')
     modifier.textContent = 'Modifier'
     tacheContain.appendChild(modifier)
 
     //TERMINER
     const terminer = document.createElement('button')
-    terminer.classList.add('btn', 'bg-green')
+    terminer.classList.add('btn', 'bg-green', 'done-btn')
     terminer.textContent = 'Terminer'
     tacheContain.appendChild(terminer)
 
     //SUPPRIMER
     const supprimer = document.createElement('button')
-    supprimer.classList.add('btn', 'bg-red')
+    supprimer.classList.add('btn', 'bg-red', 'delete-btn')
     supprimer.textContent = 'Supprimer'
     tacheContain.appendChild(supprimer)
 
@@ -101,7 +101,6 @@ button.addEventListener('click', function () {
             tacheContain.prepend(addInput)
             tache.textContent = ""
             modifier.textContent = "Valider"
-
         } else if (modifier.textContent === 'Valider') {
             let selectInput = tacheContain.querySelector('input')
 
