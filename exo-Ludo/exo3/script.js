@@ -22,6 +22,7 @@ document.addEventListener('keydown', (event) => {
         left -= 10; 
         img.style.left = left + 'px';
     } 
+    
 
     //SORTIE DE FENETRE
     const imglarg = img.offsetWidth;
