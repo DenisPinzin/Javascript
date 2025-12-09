@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 10%;
+    gap: 3rem;
+}
+
+button {
+    background-color: white;
+    padding: 1rem;
+    align-self: flex-start;
+}
+
+.btnDarkMod {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.h1DarkMod {
+    color: white;
+}
+
+.bodyDarkMod {
+    background-color: black;
+}
